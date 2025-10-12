@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Variables
 
-    public float moveSpeed = 5f; //player's speed towards pointer
+    public float moveSpeed = 3f; //player's speed towards pointer
     public float stopDistance = 0.1f; //min distance from pointer at which player stops -- prevents jittering upon reaching the pointer
     public float slowDownDistance = 1f; // start slowing down when closer than this
 

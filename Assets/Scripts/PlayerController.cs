@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float stopDistance = 0.1f; //min distance from pointer at which player stops -- prevents jittering upon reaching the pointer
     public float slowDownDistance = 1f; // start slowing down when closer than this
 
+    public bool canMove = false;
+
     public LayerMask obstacleLayers;  // A LayerMask that determines which layers are considered "obstacles" -- only objects on these layers block movement
     private Rigidbody2D rigidBody; //reference to RigidBody2D component -- used for movement and collisions
 
@@ -33,22 +35,25 @@ public class PlayerController : MonoBehaviour
     // Used for reading input, such as mouse position
     private void Update()
     {
-        // Capture raw mouse position every frame
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        rawTargetPosition = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
-
-        // WASD flashlight control
-        Vector2 inputDir = Vector2.zero;
-
-        if (Input.GetKey(KeyCode.W)) inputDir = Vector2.up;
-        else if (Input.GetKey(KeyCode.S)) inputDir = Vector2.down;
-        else if (Input.GetKey(KeyCode.A)) inputDir = Vector2.left;
-        else if (Input.GetKey(KeyCode.D)) inputDir = Vector2.right;
-
-        if (inputDir != Vector2.zero)
+        if (!canMove) return; // stop everything until it's true
         {
-            flashlightDirection = inputDir;
-            UpdateFlashlightDirection();
+            // Capture raw mouse position every frame
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            rawTargetPosition = new Vector2(mouseWorldPos.x, mouseWorldPos.y);
+
+            // WASD flashlight control
+            Vector2 inputDir = Vector2.zero;
+
+            if (Input.GetKey(KeyCode.W)) inputDir = Vector2.up;
+            else if (Input.GetKey(KeyCode.S)) inputDir = Vector2.down;
+            else if (Input.GetKey(KeyCode.A)) inputDir = Vector2.left;
+            else if (Input.GetKey(KeyCode.D)) inputDir = Vector2.right;
+
+            if (inputDir != Vector2.zero)
+            {
+                flashlightDirection = inputDir;
+                UpdateFlashlightDirection();
+            }
         }
     }
 

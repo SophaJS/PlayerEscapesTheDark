@@ -61,10 +61,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\TutorialScripts\PlayerClickActivator.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Light2DFlicker.cs" />
+    <Compile Include="Assets\Scripts\TutorialScripts\Light2DPulse.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\UIFade.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ButtonSceneTransition.cs" />
+    <Compile Include="Assets\Scripts\TutorialScripts\ExitTrigger.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ImageFader.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\GameManager.cs" />

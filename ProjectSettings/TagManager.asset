@@ -41,14 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Flooring
+    uniqueID: 2156875465
+    locked: 0
   - name: Environment
     uniqueID: 3485345025
     locked: 0
-  - name: Player
-    uniqueID: 42063711
-    locked: 0
   - name: Darkness
     uniqueID: 1895468831
+    locked: 0
+  - name: Player
+    uniqueID: 42063711
     locked: 0
   m_RenderingLayers:
   - Default

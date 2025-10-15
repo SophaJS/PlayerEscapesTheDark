@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UIFade : MonoBehaviour
+public class UIFadeIn : MonoBehaviour
 {
     public Image fadeImage;        // Your black UI image
     public float fadeDuration = 3f;

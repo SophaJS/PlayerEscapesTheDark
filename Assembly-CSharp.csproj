@@ -61,18 +61,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\TutorialScripts\PlayerClickActivator.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\Light2DFlicker.cs" />
-    <Compile Include="Assets\Scripts\TutorialScripts\Light2DPulse.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\UIFade.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\ButtonSceneTransition.cs" />
-    <Compile Include="Assets\Scripts\TutorialScripts\ExitTrigger.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\ImageFader.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\ChangeScene.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\LoopFromSectionAfterFullPlay.cs" />
+    <Compile Include="Assets\Scripts\FadeScript\UIFadeIn.cs" />
+    <Compile Include="Assets\Scripts\KeyScripts\PlayerKeys.cs" />
+    <Compile Include="Assets\Scripts\AudioScript\LoopFromSectionAfterFullPlay.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\LightScript\Light2DPulse.cs" />
+    <Compile Include="Assets\Scripts\TutorialScripts\TutorialExitTrigger.cs" />
+    <Compile Include="Assets\Scripts\TutorialScripts\TutorialMessageSystem.cs" />
+    <Compile Include="Assets\Scripts\KeyScripts\DoorTilemap.cs" />
+    <Compile Include="Assets\Scripts\LightScript\Light2DFlicker.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScript\GameManager.cs" />
+    <Compile Include="Assets\Scripts\KeyScripts\InteractionPrompt.cs" />
+    <Compile Include="Assets\Scripts\KeyScripts\KeyPickup.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\KeyScripts\DoorLockMessage.cs" />
+    <Compile Include="Assets\Scripts\FadeScript\ImagePulse.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScript\ButtonSceneTransition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

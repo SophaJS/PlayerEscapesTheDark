@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class PlayerClickActivator : MonoBehaviour
+public class TutorialMessageSystem : MonoBehaviour
 {
     public PlayerController playerMovement;
 
@@ -52,7 +52,6 @@ public class PlayerClickActivator : MonoBehaviour
 
         // Force alpha to be applied
         firstMessageText.CrossFadeAlpha(1f, 0f, true);
-        Debug.Log("First message initialized, alpha = " + firstMessageText.color.a);
     }
 
     void Update()

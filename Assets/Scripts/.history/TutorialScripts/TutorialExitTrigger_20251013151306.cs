@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
 
-public class ExitTrigger : MonoBehaviour
+public class TutorialExitTrigger : MonoBehaviour
 {
     public TextMeshProUGUI exitMessageText; // assign a UI text for final message
     public int nextSceneId;                 // scene to load

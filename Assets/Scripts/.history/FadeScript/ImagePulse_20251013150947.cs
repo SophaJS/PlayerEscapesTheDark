@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ImageFader : MonoBehaviour
+public class ImagePulse : MonoBehaviour
 {
     public Image targetImage;
     public float halfCycleDuration = 1f; // seconds to go from minAlpha -> maxAlpha

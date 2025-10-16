@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\KeyScripts\DoorLockMessageMultiple.cs" />
     <Compile Include="Assets\Scripts\FadeScript\UIFadeIn.cs" />
     <Compile Include="Assets\Scripts\KeyScripts\PlayerKeys.cs" />
     <Compile Include="Assets\Scripts\AudioScript\LoopFromSectionAfterFullPlay.cs" />
